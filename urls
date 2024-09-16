@@ -1,0 +1,7 @@
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', apps.bookmodule.views.index),  
+    path('index2/<int:val1>/<int:val2>', apps.bookmodule.views.index2)  #add only this line
+]
+ 
